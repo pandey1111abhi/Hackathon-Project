@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    .box1{
+        
+        height: 60px;
+        width: 900px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px auto;
+        box-sizing: border-box;
+        
+    }
+    .box{
+        margin: 10px;
+    }
+    .box a{
+        font-size: 20px;
+        text-decoration: none;
+        color: blue;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        
+    }
+    .search{
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        border: 2px solid blue;
+        height: 40px;
+        width: 200px;
+        box-shadow: 7px 7px 10px skyblue;
+        
+    }
+    .search input{
+        height: 40px;
+        width: 200px;
+        text-align: center;
+        font-size: 15px;
+
+    }
+   .img{
+    
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    top: 17px;
+   }
+   .img img{
+    height: 50px;
+    width: 150px;
+   }
+   .information{
+    /* border: 2px solid black; */
+    height: 500px;
+    width: 600px;
+    margin: 200px auto;
+    align-items: center;
+    text-align: center;
+     /* background: url("back1.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+     background-size: cover; 
+     background: linear-gradient(to top left, #ffffffff, #ffffff33);
+     backdrop-filter: blur(8px);
+    box-shadow: 2px 2px 55px #2273a5;
+    border-radius: 20px;
+    
+    opacity: 1.2;
+    
+   }
+   body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top left, #5cb8cf,#a8f5ff);
+   }
+   .information h1{
+    font-size: 30px;
+    color: rgb(5, 117, 161);
+    font-weight: bold;
+   }
+   .information p{
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+
+   }
+    input{
+    color: blue;
+   }
+   .information button{
+    border: 2px solid blue;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px skyblue;
+    size: 20px;
+    background-color: skyblue;
+    
+   }
+</style>
+<body>
+
+    <div class="box1">
+        <div class="box"><a href="#">Check Your Symptoms</a></div>
+        <div class="box"><a href="#">Find Factor</a></div>
+        <div class="box"> <a href="#">Find Dentist</a> </div>
+        <div class="box"> <a href="#">Connect to care</a> </div>
+        
+
+    </div>
+    <div class="search">
+        <input type="search" name="" id="" placeholder="search">
+
+    </div>
+    <div class="img">
+        <img src="new5.png" alt="">
+    </div>
+    <div class="information">
+        <h1>Enter the information</h1>
+        <p>Identify possible conditions and treatment related to your symptoms</p>
+        <form action="backend.php">
+            Age:<input type="number" name="age" id="age">
+            <br>
+            <br>
+            <!-- <h2>Select Your Gender</h2> -->
+            Male:<input type="radio" name="male" id="male">
+            Female:<input type="radio" name="female" id="female">
+        </form>
+        
+        <br>
+        <button><a href="#">Continue</a></button>
+
+    </div>
+    
+</body>
+</html>
